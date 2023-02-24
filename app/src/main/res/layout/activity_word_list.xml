@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".controller.WordListActivity"
+    android:id="@+id/bodyContainer"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp">
+
+        <EditText
+            android:id="@+id/searchText"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/custom_input_text"
+            android:padding="8dp"
+            android:hint="Search..." />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/ic_baseline_search"/>
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/yellow_button"
+            android:textColor="@color/white"
+            android:text="Add" />
+
+        <Switch
+            android:id="@+id/btnEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Edit" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <TableRow
+            android:background="@color/blue">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="English"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="94dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="Cebuano"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="127dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="Pronunciation"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="31dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="18sp"></TextView>
+        </TableRow>
+    </TableLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvWordList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:focusable="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="30dp"
+            android:background="@drawable/round_corner"
+            android:elevation="2dp"
+            app:itemIconSize="30dp"
+            app:itemIconTint="@drawable/item_selector"
+            app:itemRippleColor="@android:color/transparent"
+            app:labelVisibilityMode="unlabeled"
+            app:menu="@menu/bottom_nav_menu" />
+    </LinearLayout>
+
+
+</LinearLayout>

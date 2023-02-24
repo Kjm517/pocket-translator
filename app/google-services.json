@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1090557097040",
+    "firebase_url": "https://bistalk-1301a-default-rtdb.firebaseio.com",
+    "project_id": "bistalk-1301a",
+    "storage_bucket": "bistalk-1301a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1090557097040:android:f6a424b0b20f2b28428d55",
+        "android_client_info": {
+          "package_name": "com.example.bistalk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1090557097040-bv0b1prc0alv4nhjjsgukleb4e0l8q4t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2o6d-HmQQRHuK5RYn4MVFzH96Ay-xiqg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1090557097040-bv0b1prc0alv4nhjjsgukleb4e0l8q4t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

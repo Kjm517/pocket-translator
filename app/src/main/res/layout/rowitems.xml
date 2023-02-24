@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeightLarge"
+    android:orientation="horizontal">
+    <TableLayout
+        android:stretchColumns="1,2,3,4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TableRow>
+            <EditText
+                android:id="@+id/englishText"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:background="@null"
+                android:layout_column="1"/>
+
+            <EditText
+                android:id="@+id/cebuanoText"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:focusable="false"
+                android:gravity="center"
+                android:background="@null"
+                android:layout_marginLeft="15dp"
+                android:layout_column="1" />
+
+            <EditText
+                android:id="@+id/pronunciationText"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:background="@null"
+                android:layout_marginLeft="15dp"
+                android:layout_column="1" />
+
+            <LinearLayout>
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_column="1">
+
+                <Button
+                    android:id="@+id/btnDelete"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:layout_column="1"
+                    android:background="@drawable/ic_baseline_delete" />
+
+                <Button
+                    android:id="@+id/btnConfirm"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/ic_baseline_check" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

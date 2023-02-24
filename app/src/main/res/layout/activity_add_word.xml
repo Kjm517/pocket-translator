@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.AddWordActivity"
+    android:orientation="vertical"
+    android:id="@+id/bodyContainer"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/solo_logo" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:text="ADD WORD"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_marginBottom="50dp"/>
+
+    <EditText
+        android:id="@+id/cebuanoText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@drawable/custom_input_text"
+        android:layout_marginBottom="10dp"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/flag_philippines"
+        android:hint="Cebuano" />
+
+    <EditText
+        android:id="@+id/englishText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@drawable/custom_input_text"
+        android:layout_marginBottom="10dp"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/flag_usa"
+        android:hint="English" />
+
+    <EditText
+        android:id="@+id/pronunciationText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@drawable/custom_input_text"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/ic_baseline_hearing_24"
+        android:hint="Pronunciation" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/btnCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="40dp"
+            android:padding="10dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/custome_button"
+            android:text="Create Word" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="40dp"
+            android:padding="10dp"
+            android:background="@drawable/custom_red_btn"
+            android:text="Cancel" />
+
+    </LinearLayout>
+
+</LinearLayout>

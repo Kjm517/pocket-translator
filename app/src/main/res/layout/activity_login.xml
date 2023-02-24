@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/logo"
+        android:layout_marginBottom="50dp"/>
+
+    <EditText
+        android:id="@+id/usernameInput"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@drawable/custom_input_text"
+        android:layout_marginBottom="10dp"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/ic_baseline_person"
+        android:hint="username" />
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@drawable/custom_input_text"
+        android:inputType="textPassword"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/ic_baseline_lock"
+        android:hint="Password" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:buttonTint="@color/red"
+            android:text="Remember Me" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot password?" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="25dp">
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/custome_button"
+            android:text="Login" />
+
+        <TextView
+            android:id="@+id/btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Don't have an account? Sign up" />
+
+    </LinearLayout>
+</LinearLayout>

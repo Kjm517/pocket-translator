@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".controller.TranslationActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="150dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"/>
+
+        <TextView
+            android:id="@+id/translatedWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="eroplano"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="30dp"
+            android:background="@drawable/round_corner"
+            android:elevation="2dp"
+            app:itemIconSize="30dp"
+            app:itemIconTint="@drawable/item_selector"
+            app:itemRippleColor="@android:color/transparent"
+            app:labelVisibilityMode="unlabeled"
+            app:menu="@menu/bottom_nav_menu" />
+    </LinearLayout>
+
+</LinearLayout>
